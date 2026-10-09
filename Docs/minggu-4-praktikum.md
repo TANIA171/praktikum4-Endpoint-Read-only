@@ -21,8 +21,16 @@ Actual response sudah sesuai dengan API Contract Minggu 3:
 
 ## Bukti Pengujian
 - **List Books** → menampilkan 2 buku, urut berdasarkan id
+
+![List Books](hasil/Collection%20Berhasil.png)
+
 - **Show Book id 1** → menampilkan data buku "Clean Code"
+
+![Detail Book](hasil/Detail%20Berhasil.png)
+
 - **Show Book id 999999** → mengembalikan status 404 dengan pesan "Book not found"
+
+![Resource Tidak Ditemukan](hasil/Resource%20Tidak%20Ditemukan.png)
 
 ## Refleksi
 - Rute di `routes/api.php` menentukan alamat URL endpoint
