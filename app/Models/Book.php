@@ -1,9 +1,15 @@
 <?php
+
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
 class Book extends Model
 {
-    // $fillable belum diperlukan untuk read-only
+protected $fillable = ['title', 'isbn', 'available', 'author_name'];
+    
+protected function casts(): array
+    {
+        return ['available' => 'boolean'];
+    }
 }
